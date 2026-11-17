@@ -7,8 +7,19 @@ This project compares LFM2.5 checkpoints under a fixed runtime and evaluation se
 - Liquid AI QAD `Q4_0`
 - `Q5_K_M` reference
 
-The first experiment is intentionally small and reproducible. It records generation
-latency and output text; task-specific scoring can be added after the smoke test.
+The experiment is intentionally small and reproducible. It records generation
+latency and output text, then scores exact match, JSON validity, instruction
+compliance, and repeated-seed stability.
+
+## Results
+
+Across 10 prompts and three seeds (30 paired cases per model), QAD Q4_0 matched
+BF16 at 18/30 exact matches while standard PTQ Q4_0 scored 11/30. Q5_K_M scored
+24/30. Warm CPU generation was 142.6 tok/s for QAD versus 50.0 tok/s for BF16.
+
+See [RESULTS_REPORT.md](RESULTS_REPORT.md),
+[results/statistical_analysis.md](results/statistical_analysis.md), and
+[PUBLICATION_DRAFTS.md](PUBLICATION_DRAFTS.md).
 
 ## Prerequisites
 
