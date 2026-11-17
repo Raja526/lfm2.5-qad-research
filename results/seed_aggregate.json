@@ -1,0 +1,122 @@
+{
+  "BF16": {
+    "n": 30,
+    "exact_match": 18,
+    "json_valid": 12,
+    "instruction_compliant": 24,
+    "mean_elapsed_ms": 1444.08,
+    "per_seed": {
+      "1234": {
+        "n": 10,
+        "exact_match": 6,
+        "json_valid": 4,
+        "instruction_compliant": 8,
+        "mean_elapsed_ms": 1444.28
+      },
+      "2024": {
+        "n": 10,
+        "exact_match": 6,
+        "json_valid": 4,
+        "instruction_compliant": 8,
+        "mean_elapsed_ms": 1413.48
+      },
+      "4242": {
+        "n": 10,
+        "exact_match": 6,
+        "json_valid": 4,
+        "instruction_compliant": 8,
+        "mean_elapsed_ms": 1474.49
+      }
+    }
+  },
+  "PTQ_Q4_0": {
+    "n": 30,
+    "exact_match": 11,
+    "json_valid": 2,
+    "instruction_compliant": 11,
+    "mean_elapsed_ms": 1074.11,
+    "per_seed": {
+      "1234": {
+        "n": 10,
+        "exact_match": 5,
+        "json_valid": 2,
+        "instruction_compliant": 5,
+        "mean_elapsed_ms": 1013.33
+      },
+      "2024": {
+        "n": 10,
+        "exact_match": 3,
+        "json_valid": 0,
+        "instruction_compliant": 3,
+        "mean_elapsed_ms": 1159.93
+      },
+      "4242": {
+        "n": 10,
+        "exact_match": 3,
+        "json_valid": 0,
+        "instruction_compliant": 3,
+        "mean_elapsed_ms": 1049.06
+      }
+    }
+  },
+  "QAD_Q4_0": {
+    "n": 30,
+    "exact_match": 18,
+    "json_valid": 12,
+    "instruction_compliant": 24,
+    "mean_elapsed_ms": 804.77,
+    "per_seed": {
+      "1234": {
+        "n": 10,
+        "exact_match": 6,
+        "json_valid": 4,
+        "instruction_compliant": 8,
+        "mean_elapsed_ms": 816.97
+      },
+      "2024": {
+        "n": 10,
+        "exact_match": 6,
+        "json_valid": 4,
+        "instruction_compliant": 8,
+        "mean_elapsed_ms": 806.54
+      },
+      "4242": {
+        "n": 10,
+        "exact_match": 6,
+        "json_valid": 4,
+        "instruction_compliant": 8,
+        "mean_elapsed_ms": 790.79
+      }
+    }
+  },
+  "Q5_K_M": {
+    "n": 30,
+    "exact_match": 24,
+    "json_valid": 12,
+    "instruction_compliant": 27,
+    "mean_elapsed_ms": 910.63,
+    "per_seed": {
+      "1234": {
+        "n": 10,
+        "exact_match": 8,
+        "json_valid": 4,
+        "instruction_compliant": 9,
+        "mean_elapsed_ms": 908.95
+      },
+      "2024": {
+        "n": 10,
+        "exact_match": 8,
+        "json_valid": 4,
+        "instruction_compliant": 9,
+        "mean_elapsed_ms": 896.24
+      },
+      "4242": {
+        "n": 10,
+        "exact_match": 8,
+        "json_valid": 4,
+        "instruction_compliant": 9,
+        "mean_elapsed_ms": 926.7
+      }
+    }
+  }
+}

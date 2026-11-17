@@ -1,0 +1,287 @@
+{
+  "summary": {
+    "BF16": {
+      "n": 30,
+      "metrics": {
+        "exact_match": {
+          "k": 18,
+          "n": 30,
+          "rate": 0.6,
+          "wilson95": [
+            0.4232,
+            0.7541
+          ]
+        },
+        "json_valid": {
+          "k": 12,
+          "n": 30,
+          "rate": 0.4,
+          "wilson95": [
+            0.2459,
+            0.5768
+          ]
+        },
+        "instruction_compliant": {
+          "k": 24,
+          "n": 30,
+          "rate": 0.8,
+          "wilson95": [
+            0.6269,
+            0.905
+          ]
+        }
+      },
+      "latency_ms": {
+        "mean": 1444.08,
+        "stdev": 812.3
+      }
+    },
+    "PTQ_Q4_0": {
+      "n": 30,
+      "metrics": {
+        "exact_match": {
+          "k": 11,
+          "n": 30,
+          "rate": 0.3667,
+          "wilson95": [
+            0.2187,
+            0.5449
+          ]
+        },
+        "json_valid": {
+          "k": 2,
+          "n": 30,
+          "rate": 0.0667,
+          "wilson95": [
+            0.0185,
+            0.2132
+          ]
+        },
+        "instruction_compliant": {
+          "k": 11,
+          "n": 30,
+          "rate": 0.3667,
+          "wilson95": [
+            0.2187,
+            0.5449
+          ]
+        }
+      },
+      "latency_ms": {
+        "mean": 1074.11,
+        "stdev": 391.36
+      }
+    },
+    "QAD_Q4_0": {
+      "n": 30,
+      "metrics": {
+        "exact_match": {
+          "k": 18,
+          "n": 30,
+          "rate": 0.6,
+          "wilson95": [
+            0.4232,
+            0.7541
+          ]
+        },
+        "json_valid": {
+          "k": 12,
+          "n": 30,
+          "rate": 0.4,
+          "wilson95": [
+            0.2459,
+            0.5768
+          ]
+        },
+        "instruction_compliant": {
+          "k": 24,
+          "n": 30,
+          "rate": 0.8,
+          "wilson95": [
+            0.6269,
+            0.905
+          ]
+        }
+      },
+      "latency_ms": {
+        "mean": 804.77,
+        "stdev": 282.29
+      }
+    },
+    "Q5_K_M": {
+      "n": 30,
+      "metrics": {
+        "exact_match": {
+          "k": 24,
+          "n": 30,
+          "rate": 0.8,
+          "wilson95": [
+            0.6269,
+            0.905
+          ]
+        },
+        "json_valid": {
+          "k": 12,
+          "n": 30,
+          "rate": 0.4,
+          "wilson95": [
+            0.2459,
+            0.5768
+          ]
+        },
+        "instruction_compliant": {
+          "k": 27,
+          "n": 30,
+          "rate": 0.9,
+          "wilson95": [
+            0.7438,
+            0.9654
+          ]
+        }
+      },
+      "latency_ms": {
+        "mean": 910.63,
+        "stdev": 374.77
+      }
+    }
+  },
+  "paired_comparisons": {
+    "QAD_Q4_0_vs_BF16": {
+      "exact_match": {
+        "bootstrap": {
+          "mean_difference": 0.0,
+          "ci95": [
+            0,
+            0
+          ]
+        },
+        "mcnemar": {
+          "a_only": 0,
+          "b_only": 0,
+          "two_sided_exact_p": 1.0
+        }
+      },
+      "json_valid": {
+        "bootstrap": {
+          "mean_difference": 0.0,
+          "ci95": [
+            0,
+            0
+          ]
+        },
+        "mcnemar": {
+          "a_only": 0,
+          "b_only": 0,
+          "two_sided_exact_p": 1.0
+        }
+      },
+      "instruction_compliant": {
+        "bootstrap": {
+          "mean_difference": 0.0,
+          "ci95": [
+            0,
+            0
+          ]
+        },
+        "mcnemar": {
+          "a_only": 0,
+          "b_only": 0,
+          "two_sided_exact_p": 1.0
+        }
+      }
+    },
+    "QAD_Q4_0_vs_PTQ_Q4_0": {
+      "exact_match": {
+        "bootstrap": {
+          "mean_difference": 0.2333,
+          "ci95": [
+            0.0667,
+            0.4
+          ]
+        },
+        "mcnemar": {
+          "a_only": 8,
+          "b_only": 1,
+          "two_sided_exact_p": 0.039062
+        }
+      },
+      "json_valid": {
+        "bootstrap": {
+          "mean_difference": 0.3333,
+          "ci95": [
+            0.1667,
+            0.5
+          ]
+        },
+        "mcnemar": {
+          "a_only": 10,
+          "b_only": 0,
+          "two_sided_exact_p": 0.001953
+        }
+      },
+      "instruction_compliant": {
+        "bootstrap": {
+          "mean_difference": 0.4333,
+          "ci95": [
+            0.2667,
+            0.6
+          ]
+        },
+        "mcnemar": {
+          "a_only": 13,
+          "b_only": 0,
+          "two_sided_exact_p": 0.000244
+        }
+      }
+    },
+    "Q5_K_M_vs_QAD_Q4_0": {
+      "exact_match": {
+        "bootstrap": {
+          "mean_difference": 0.2,
+          "ci95": [
+            0.0667,
+            0.3333
+          ]
+        },
+        "mcnemar": {
+          "a_only": 6,
+          "b_only": 0,
+          "two_sided_exact_p": 0.03125
+        }
+      },
+      "json_valid": {
+        "bootstrap": {
+          "mean_difference": 0.0,
+          "ci95": [
+            0,
+            0
+          ]
+        },
+        "mcnemar": {
+          "a_only": 0,
+          "b_only": 0,
+          "two_sided_exact_p": 1.0
+        }
+      },
+      "instruction_compliant": {
+        "bootstrap": {
+          "mean_difference": 0.1,
+          "ci95": [
+            0,
+            0.2333
+          ]
+        },
+        "mcnemar": {
+          "a_only": 3,
+          "b_only": 0,
+          "two_sided_exact_p": 0.25
+        }
+      }
+    }
+  },
+  "notes": [
+    "95% Wilson intervals describe uncertainty over the 30 paired prompt-seed cases.",
+    "Bootstrap intervals resample paired cases 10,000 times with seed 7.",
+    "These are exploratory results, not a claim of generalization to unseen tasks."
+  ]
+}

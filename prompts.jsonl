@@ -1,0 +1,5 @@
+{"id":"instruction_01","category":"instruction_following","prompt":"Return exactly three short bullet points explaining why quantization reduces memory usage. Do not add an introduction."}
+{"id":"extraction_01","category":"structured_extraction","prompt":"Extract the fields as JSON with keys name, city, and amount from this text: Anita Rao paid 1250 rupees in Hyderabad."}
+{"id":"tool_01","category":"tool_use","prompt":"Choose the correct function name and arguments for this request: set an alarm for 07:30 tomorrow. Return only JSON."}
+{"id":"factual_01","category":"factual_qa","prompt":"What is the capital of Japan? Answer with only the city name."}
+{"id":"math_01","category":"math","prompt":"A quantized model has 800 million parameters at 4 bits each. Approximately how many bytes are needed for the weights? Show one short calculation."}

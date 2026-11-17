@@ -1,0 +1,218 @@
+{
+  "230m_bf16": {
+    "records": [
+      {
+        "id": "instruction_01",
+        "category": "instruction_following",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 2441.61,
+        "answer": "- Reduces the number of bits required to represent a value  \n- Decreases the amount of data stored in memory  \n- Limits the size of the data that can be held in a storage device"
+      },
+      {
+        "id": "extraction_01",
+        "category": "structured_extraction",
+        "exact_match": 0,
+        "json_valid": 1,
+        "instruction_compliant": 1,
+        "elapsed_ms": 1987.39,
+        "answer": "```json\n{\n  \"name\": \"Anita Rao\",\n  \"city\": \"Hyderabad\",\n  \"amount\": \"1250\"\n}\n```"
+      },
+      {
+        "id": "tool_01",
+        "category": "tool_use",
+        "exact_match": 1,
+        "json_valid": 1,
+        "instruction_compliant": 1,
+        "elapsed_ms": 1970.27,
+        "answer": "```json\n{\n  \"function_name\": \"set_alarm\",\n  \"arguments\": [\"07:30\"]\n}\n```"
+      },
+      {
+        "id": "factual_01",
+        "category": "factual_qa",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 1445.96,
+        "answer": "Tokyo"
+      },
+      {
+        "id": "math_01",
+        "category": "math",
+        "exact_match": 0,
+        "json_valid": 0,
+        "instruction_compliant": 0,
+        "elapsed_ms": 4112.42,
+        "answer": "To determine the number of bytes needed for the weights, we follow these steps:\n\n1. **Calculate the number of parameters**:  \n   \\( 800 \\text{ million parameters} = 800 \\times 10^6 \\text{ parameters} = 8 \\times 10^8 \\text{ parameters} \\).\n\n2. **Convert parameters to bits**:  \n   Each parameter is 4 bits, so the total number of bits is:  \n   \\( 8 \\times 10^8 \\text{ bits} = 8 \\times 10^8 \\text{ bits} \\)."
+      }
+    ],
+    "n": 5,
+    "exact_match": 3,
+    "json_valid": 2,
+    "instruction_compliant": 4,
+    "mean_elapsed_ms": 2391.53
+  },
+  "230m_ptq_q4_0": {
+    "records": [
+      {
+        "id": "instruction_01",
+        "category": "instruction_following",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 16126.7,
+        "answer": "- Reduces the number of variables and parameters required for calculations  \n- Limits the storage of large datasets by compressing data into smaller, more manageable units  \n- Avoids unnecessary data storage by focusing on essential information rather than redundant details"
+      },
+      {
+        "id": "extraction_01",
+        "category": "structured_extraction",
+        "exact_match": 1,
+        "json_valid": 1,
+        "instruction_compliant": 1,
+        "elapsed_ms": 2813.7,
+        "answer": "Here is the extracted JSON with the required fields:\n\n```json\n{\n  \"name\": \"Anita Rao\",\n  \"city\": \"Hyderabad\",\n  \"amount\": 1250\n}\n```\n\nThis JSON contains the fields as specified:\n\n- **name**: Anita Rao  \n- **city**: Hyderabad  \n- **amount**: 1250 rupees  \n\nLet me know if you'd like to extract additional fields or modify the data!"
+      },
+      {
+        "id": "tool_01",
+        "category": "tool_use",
+        "exact_match": 1,
+        "json_valid": 1,
+        "instruction_compliant": 1,
+        "elapsed_ms": 1779.09,
+        "answer": "```json\n{\n  \"function_name\": \"set_alarm\",\n  \"arguments\": [\n    \"tomorrow\",\n    \"07:30\"\n  ]\n}\n```"
+      },
+      {
+        "id": "factual_01",
+        "category": "factual_qa",
+        "exact_match": 0,
+        "json_valid": 0,
+        "instruction_compliant": 0,
+        "elapsed_ms": 1487.62,
+        "answer": "The capital of Japan is Tokyo."
+      },
+      {
+        "id": "math_01",
+        "category": "math",
+        "exact_match": 0,
+        "json_valid": 0,
+        "instruction_compliant": 0,
+        "elapsed_ms": 2725.87,
+        "answer": "1. **Calculate the number of weights**:  \n   Each weight has 4 bits, so 800 million parameters = \\( 800 \\times 10^6 \\times 4 = 3.2 \\times 10^9 \\) weights.\n\n2. **Convert weights to bytes**:  \n   1 byte = 8 bits, so 3.2 × 10⁹ bits = \\( \\frac{3.2 \\times 10^9}{8} = 4 \\times 10^7 \\) bytes.\n\n   **Answer**: \\(\\boxed{4 \\times"
+      }
+    ],
+    "n": 5,
+    "exact_match": 3,
+    "json_valid": 2,
+    "instruction_compliant": 3,
+    "mean_elapsed_ms": 4986.6
+  },
+  "230m_qad": {
+    "records": [
+      {
+        "id": "instruction_01",
+        "category": "instruction_following",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 1887.88,
+        "answer": "- Reduces the number of bits needed to represent a single data element  \n- Decreases storage requirements for large datasets  \n- Improves cache efficiency by minimizing data movement"
+      },
+      {
+        "id": "extraction_01",
+        "category": "structured_extraction",
+        "exact_match": 0,
+        "json_valid": 1,
+        "instruction_compliant": 1,
+        "elapsed_ms": 1768.89,
+        "answer": "```json\n{\n  \"name\": \"Anita Rao\",\n  \"city\": \"Hyderabad\",\n  \"amount\": \"1250\"\n}\n```"
+      },
+      {
+        "id": "tool_01",
+        "category": "tool_use",
+        "exact_match": 1,
+        "json_valid": 1,
+        "instruction_compliant": 1,
+        "elapsed_ms": 1767.57,
+        "answer": "```json\n{\n  \"function_name\": \"set_alarm\",\n  \"arguments\": [\"07:30\"]\n}\n```"
+      },
+      {
+        "id": "factual_01",
+        "category": "factual_qa",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 1346.82,
+        "answer": "Tokyo"
+      },
+      {
+        "id": "math_01",
+        "category": "math",
+        "exact_match": 0,
+        "json_valid": 0,
+        "instruction_compliant": 0,
+        "elapsed_ms": 2732.75,
+        "answer": "To determine the number of bytes needed for the weights in a quantized model, we use the following calculation:\n\n1. **Number of parameters**:  \n   \\( 800 \\text{ million parameters} = 800 \\times 10^6 = 8 \\times 10^8 \\text{ parameters} \\).\n\n2. **Bits per parameter**:  \n   Each parameter is stored in 4 bits.\n\n3. **Total bytes**:  \n   \\[\n   \\text{bytes} = \\frac{8 \\times 10^8 \\text{ parameters}}{4 \\text{ bits/parameter"
+      }
+    ],
+    "n": 5,
+    "exact_match": 3,
+    "json_valid": 2,
+    "instruction_compliant": 4,
+    "mean_elapsed_ms": 1900.78
+  },
+  "230m_q5_k_m": {
+    "records": [
+      {
+        "id": "instruction_01",
+        "category": "instruction_following",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 18027.49,
+        "answer": "- Reduces the number of bits required to represent data, lowering storage space.  \n- Limits the amount of data stored, decreasing bandwidth and processing demands.  \n- Minimizes the need for complex data structures, improving efficiency and reducing overhead."
+      },
+      {
+        "id": "extraction_01",
+        "category": "structured_extraction",
+        "exact_match": 1,
+        "json_valid": 1,
+        "instruction_compliant": 1,
+        "elapsed_ms": 1785.52,
+        "answer": "```json\n{\n  \"name\": \"Anita Rao\",\n  \"city\": \"Hyderabad\",\n  \"amount\": 1250\n}\n```"
+      },
+      {
+        "id": "tool_01",
+        "category": "tool_use",
+        "exact_match": 1,
+        "json_valid": 1,
+        "instruction_compliant": 1,
+        "elapsed_ms": 1656.85,
+        "answer": "```json\n{\n  \"function_name\": \"set_alarm\",\n  \"arguments\": [\"07:30\"]\n}\n```"
+      },
+      {
+        "id": "factual_01",
+        "category": "factual_qa",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 1426.5,
+        "answer": "Tokyo"
+      },
+      {
+        "id": "math_01",
+        "category": "math",
+        "exact_match": 0,
+        "json_valid": 0,
+        "instruction_compliant": 0,
+        "elapsed_ms": 3102.99,
+        "answer": "To determine the number of bytes needed for the weights, we follow these steps:\n\n1. **Calculate the number of weights**:  \n   Each weight is 4 bits, and there are 800 million parameters.  \n   \\[\n   \\text{Number of weights} = \\frac{800 \\text{ million bits}}{4 \\text{ bits/weight}} = 200 \\text{ weights}\n   \\]\n\n2. **Calculate the size of each weight**:  \n   Each weight uses 4 bits.\n\n3. **Calculate the total size in bits**:  \n   \\[\n   \\"
+      }
+    ],
+    "n": 5,
+    "exact_match": 4,
+    "json_valid": 2,
+    "instruction_compliant": 4,
+    "mean_elapsed_ms": 5199.87
+  }
+}

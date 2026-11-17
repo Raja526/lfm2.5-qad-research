@@ -1,0 +1,398 @@
+{
+  "extended_BF16": {
+    "records": [
+      {
+        "id": "instruction_01",
+        "category": "instruction_following",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 1496.93,
+        "answer": "- Reduces the number of bits required to represent a value  \n- Decreases the amount of data stored in memory  \n- Limits the size of the data that can be held in a storage device"
+      },
+      {
+        "id": "extraction_01",
+        "category": "structured_extraction",
+        "exact_match": 0,
+        "json_valid": 1,
+        "instruction_compliant": 1,
+        "elapsed_ms": 1307.59,
+        "answer": "```json\n{\n  \"name\": \"Anita Rao\",\n  \"city\": \"Hyderabad\",\n  \"amount\": \"1250\"\n}\n```"
+      },
+      {
+        "id": "tool_01",
+        "category": "tool_use",
+        "exact_match": 1,
+        "json_valid": 1,
+        "instruction_compliant": 1,
+        "elapsed_ms": 1519.65,
+        "answer": "```json\n{\n  \"function_name\": \"set_alarm\",\n  \"arguments\": [\"07:30\"]\n}\n```"
+      },
+      {
+        "id": "factual_01",
+        "category": "factual_qa",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 585.5,
+        "answer": "Tokyo"
+      },
+      {
+        "id": "math_01",
+        "category": "math",
+        "exact_match": 0,
+        "json_valid": 0,
+        "instruction_compliant": 0,
+        "elapsed_ms": 3643.48,
+        "answer": "To determine the number of bytes needed for the weights, we follow these steps:\n\n1. **Calculate the number of parameters**:  \n   \\( 800 \\text{ million parameters} = 800 \\times 10^6 \\text{ parameters} = 8 \\times 10^8 \\text{ parameters} \\).\n\n2. **Convert parameters to bits**:  \n   Each parameter is 4 bits, so the total number of bits is:  \n   \\( 8 \\times 10^8 \\text{ bits} = 8 \\times 10^8 \\text{ bits} \\)."
+      },
+      {
+        "id": "instruction_02",
+        "category": "instruction_following",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 1356.76,
+        "answer": "Lower-precision weights improve cache usage by reducing memory accesses and increasing cache hit rates, as they store smaller values closer to the cache, minimizing latency and improving overall performance."
+      },
+      {
+        "id": "extraction_02",
+        "category": "structured_extraction",
+        "exact_match": 0,
+        "json_valid": 1,
+        "instruction_compliant": 1,
+        "elapsed_ms": 945.82,
+        "answer": "```json\n{\n  \"active\": 7,\n  \"count\": 7\n}\n```"
+      },
+      {
+        "id": "tool_02",
+        "category": "tool_use",
+        "exact_match": 0,
+        "json_valid": 1,
+        "instruction_compliant": 0,
+        "elapsed_ms": 971.39,
+        "answer": "```json\n{\n  \"function\": \"set\",\n  \"arguments\": [\"5\"]\n}\n```"
+      },
+      {
+        "id": "factual_02",
+        "category": "factual_qa",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 528.28,
+        "answer": "Paris"
+      },
+      {
+        "id": "math_02",
+        "category": "math",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 2087.41,
+        "answer": "To calculate 15% of 200, we use the formula:\n\n\\[\n\\text{Percentage} \\times \\text{Amount} = \\text{Result}\n\\]\n\nSubstituting the given values:\n\n\\[\n15\\% \\times 200 = 0.15 \\times 200 = 30\n\\]\n\nThus, the result is \\(\\boxed{30}\\)."
+      }
+    ],
+    "n": 10,
+    "exact_match": 6,
+    "json_valid": 4,
+    "instruction_compliant": 8,
+    "mean_elapsed_ms": 1444.28
+  },
+  "extended_PTQ_Q4_0": {
+    "records": [
+      {
+        "id": "instruction_01",
+        "category": "instruction_following",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 834.46,
+        "answer": "- Reduces the number of variables and parameters required for calculations  \n- Limits the storage of large datasets by compressing data into smaller, more manageable units  \n- Avoids unnecessary data storage by focusing on essential information rather than redundant details"
+      },
+      {
+        "id": "extraction_01",
+        "category": "structured_extraction",
+        "exact_match": 1,
+        "json_valid": 1,
+        "instruction_compliant": 1,
+        "elapsed_ms": 1206.2,
+        "answer": "Here is the extracted JSON with the required fields:\n\n```json\n{\n  \"name\": \"Anita Rao\",\n  \"city\": \"Hyderabad\",\n  \"amount\": 1250\n}\n```\n\nThis JSON contains the fields as specified:\n\n- **name**: Anita Rao  \n- **city**: Hyderabad  \n- **amount**: 1250 rupees  \n\nLet me know if you'd like to extract additional fields or modify the data!"
+      },
+      {
+        "id": "tool_01",
+        "category": "tool_use",
+        "exact_match": 1,
+        "json_valid": 1,
+        "instruction_compliant": 1,
+        "elapsed_ms": 783.02,
+        "answer": "```json\n{\n  \"function_name\": \"set_alarm\",\n  \"arguments\": [\n    \"tomorrow\",\n    \"07:30\"\n  ]\n}\n```"
+      },
+      {
+        "id": "factual_01",
+        "category": "factual_qa",
+        "exact_match": 0,
+        "json_valid": 0,
+        "instruction_compliant": 0,
+        "elapsed_ms": 569.09,
+        "answer": "The capital of Japan is Tokyo."
+      },
+      {
+        "id": "math_01",
+        "category": "math",
+        "exact_match": 0,
+        "json_valid": 0,
+        "instruction_compliant": 0,
+        "elapsed_ms": 1420.31,
+        "answer": "1. **Calculate the number of weights**:  \n   Each weight has 4 bits, so 800 million parameters = \\( 800 \\times 10^6 \\times 4 = 3.2 \\times 10^9 \\) weights.\n\n2. **Convert weights to bytes**:  \n   1 byte = 8 bits, so 3.2 × 10⁹ bits = \\( \\frac{3.2 \\times 10^9}{8} = 4 \\times 10^7 \\) bytes.\n\n   **Answer**: \\(\\boxed{4 \\times"
+      },
+      {
+        "id": "instruction_02",
+        "category": "instruction_following",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 761.76,
+        "answer": "Lower-precision weights improve cache usage by reducing the number of cache misses and enabling more efficient data retrieval, as they require fewer cache entries and can be loaded from disk more frequently."
+      },
+      {
+        "id": "extraction_02",
+        "category": "structured_extraction",
+        "exact_match": 0,
+        "json_valid": 0,
+        "instruction_compliant": 0,
+        "elapsed_ms": 1394.36,
+        "answer": "Here's a Python script that extracts the key \"active\" and the count from the given text:\n\n```python\nimport json\n\ntext = \"\"\"\nThe service is active and has 7 workers.\n\"\"\"\n\n# Extract the key \"active\"\nactive_key = text.split(\"active\")[0]\n\n# Extract the count\ncount = text.split(\"count\")[0]\n\nprint(f\"Active: {active_key}\")\nprint(f\"Count: {count}\")\n```\n\nWhen you run this script, it will output:\n```\nActive: 7\nCount: 7\n```\n\nThis script assumes that"
+      },
+      {
+        "id": "tool_02",
+        "category": "tool_use",
+        "exact_match": 0,
+        "json_valid": 0,
+        "instruction_compliant": 0,
+        "elapsed_ms": 1408.29,
+        "answer": "To determine the correct function name and arguments for the request, I'll follow these steps:\n\n1. **Identify the context**: The request is about setting a timer for 5 minutes.\n2. **Determine the function name**: Based on the context, a timer function name is likely \"Timer\" or \"Timer\" (since \"5 minutes\" is a common time unit).\n3. **List the arguments**: The arguments for the function name are the time duration (5 minutes) and the function name (e.g., \"Timer\").\n\nThus, the function name is \"Timer\" and the arguments are \""
+      },
+      {
+        "id": "factual_02",
+        "category": "factual_qa",
+        "exact_match": 0,
+        "json_valid": 0,
+        "instruction_compliant": 0,
+        "elapsed_ms": 549.64,
+        "answer": "The capital of France is Paris."
+      },
+      {
+        "id": "math_02",
+        "category": "math",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 1206.17,
+        "answer": "To calculate 15% of 200, we use the formula:\n\\[\n\\text{Percentage} \\times \\text{Value} = \\text{Percentage of Value}\n\\]\nHere, the value is 200 and the percentage is 15%.\n\n\\[\n15\\% \\times 200 = \\frac{15}{100} \\times 200 = 0.15 \\times 200 = 30\n\\]\n\nThus, the result is \\(\\boxed{30}\\)."
+      }
+    ],
+    "n": 10,
+    "exact_match": 5,
+    "json_valid": 2,
+    "instruction_compliant": 5,
+    "mean_elapsed_ms": 1013.33
+  },
+  "extended_QAD_Q4_0": {
+    "records": [
+      {
+        "id": "instruction_01",
+        "category": "instruction_following",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 750.57,
+        "answer": "- Reduces the number of bits needed to represent a single data element  \n- Decreases storage requirements for large datasets  \n- Improves cache efficiency by minimizing data movement"
+      },
+      {
+        "id": "extraction_01",
+        "category": "structured_extraction",
+        "exact_match": 0,
+        "json_valid": 1,
+        "instruction_compliant": 1,
+        "elapsed_ms": 756.08,
+        "answer": "```json\n{\n  \"name\": \"Anita Rao\",\n  \"city\": \"Hyderabad\",\n  \"amount\": \"1250\"\n}\n```"
+      },
+      {
+        "id": "tool_01",
+        "category": "tool_use",
+        "exact_match": 1,
+        "json_valid": 1,
+        "instruction_compliant": 1,
+        "elapsed_ms": 701.35,
+        "answer": "```json\n{\n  \"function_name\": \"set_alarm\",\n  \"arguments\": [\"07:30\"]\n}\n```"
+      },
+      {
+        "id": "factual_01",
+        "category": "factual_qa",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 487.67,
+        "answer": "Tokyo"
+      },
+      {
+        "id": "math_01",
+        "category": "math",
+        "exact_match": 0,
+        "json_valid": 0,
+        "instruction_compliant": 0,
+        "elapsed_ms": 1573.04,
+        "answer": "To determine the number of bytes needed for the weights in a quantized model, we use the following calculation:\n\n1. **Number of parameters**:  \n   \\( 800 \\text{ million parameters} = 800 \\times 10^6 = 8 \\times 10^8 \\text{ parameters} \\).\n\n2. **Bits per parameter**:  \n   Each parameter is stored in 4 bits.\n\n3. **Total bytes**:  \n   \\[\n   \\text{bytes} = \\frac{8 \\times 10^8 \\text{ parameters}}{4 \\text{ bits/parameter"
+      },
+      {
+        "id": "instruction_02",
+        "category": "instruction_following",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 767.2,
+        "answer": "Lower-precision weights improve cache usage by reducing memory access latency and enabling more efficient data retrieval, as they minimize the number of cache misses and allow faster access to frequently used data."
+      },
+      {
+        "id": "extraction_02",
+        "category": "structured_extraction",
+        "exact_match": 0,
+        "json_valid": 1,
+        "instruction_compliant": 1,
+        "elapsed_ms": 954.87,
+        "answer": "Here's the JSON with the keys **active** and **count** extracted from the text:\n\n```json\n{\n  \"active\": 7,\n  \"count\": 7\n}\n```\n\nThis JSON structure includes the keys `active` and `count` as specified in your query."
+      },
+      {
+        "id": "tool_02",
+        "category": "tool_use",
+        "exact_match": 0,
+        "json_valid": 1,
+        "instruction_compliant": 0,
+        "elapsed_ms": 652.93,
+        "answer": "```json\n{\n  \"function_name\": \"set\",\n  \"arguments\": [\"5\"]\n}\n```"
+      },
+      {
+        "id": "factual_02",
+        "category": "factual_qa",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 518.05,
+        "answer": "Paris"
+      },
+      {
+        "id": "math_02",
+        "category": "math",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 1007.94,
+        "answer": "To calculate 15% of 200, you multiply 15% by 200:\n\n\\[\n15\\% \\times 200 = \\frac{15}{100} \\times 200 = 0.15 \\times 200 = 30\n\\]\n\nThus, 15% of 200 is \\(\\boxed{30}\\)."
+      }
+    ],
+    "n": 10,
+    "exact_match": 6,
+    "json_valid": 4,
+    "instruction_compliant": 8,
+    "mean_elapsed_ms": 816.97
+  },
+  "extended_Q5_K_M": {
+    "records": [
+      {
+        "id": "instruction_01",
+        "category": "instruction_following",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 1043.91,
+        "answer": "- Reduces the number of bits required to represent data, lowering storage space.  \n- Limits the amount of data stored, decreasing bandwidth and processing demands.  \n- Minimizes the need for complex data structures, improving efficiency and reducing overhead."
+      },
+      {
+        "id": "extraction_01",
+        "category": "structured_extraction",
+        "exact_match": 1,
+        "json_valid": 1,
+        "instruction_compliant": 1,
+        "elapsed_ms": 888.1,
+        "answer": "```json\n{\n  \"name\": \"Anita Rao\",\n  \"city\": \"Hyderabad\",\n  \"amount\": 1250\n}\n```"
+      },
+      {
+        "id": "tool_01",
+        "category": "tool_use",
+        "exact_match": 1,
+        "json_valid": 1,
+        "instruction_compliant": 1,
+        "elapsed_ms": 794.27,
+        "answer": "```json\n{\n  \"function_name\": \"set_alarm\",\n  \"arguments\": [\"07:30\"]\n}\n```"
+      },
+      {
+        "id": "factual_01",
+        "category": "factual_qa",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 552.91,
+        "answer": "Tokyo"
+      },
+      {
+        "id": "math_01",
+        "category": "math",
+        "exact_match": 0,
+        "json_valid": 0,
+        "instruction_compliant": 0,
+        "elapsed_ms": 1907.24,
+        "answer": "To determine the number of bytes needed for the weights, we follow these steps:\n\n1. **Calculate the number of weights**:  \n   Each weight is 4 bits, and there are 800 million parameters.  \n   \\[\n   \\text{Number of weights} = \\frac{800 \\text{ million bits}}{4 \\text{ bits/weight}} = 200 \\text{ weights}\n   \\]\n\n2. **Calculate the size of each weight**:  \n   Each weight uses 4 bits.\n\n3. **Calculate the total size in bits**:  \n   \\[\n   \\"
+      },
+      {
+        "id": "instruction_02",
+        "category": "instruction_following",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 806.09,
+        "answer": "Lower-precision weights improve cache usage by reducing memory accesses and increasing cache hit rates, leading to faster data retrieval and reduced latency."
+      },
+      {
+        "id": "extraction_02",
+        "category": "structured_extraction",
+        "exact_match": 1,
+        "json_valid": 1,
+        "instruction_compliant": 1,
+        "elapsed_ms": 728.76,
+        "answer": "```json\n{\n  \"active\": true,\n  \"count\": 7\n}\n```"
+      },
+      {
+        "id": "tool_02",
+        "category": "tool_use",
+        "exact_match": 0,
+        "json_valid": 1,
+        "instruction_compliant": 1,
+        "elapsed_ms": 769.72,
+        "answer": "```json\n{\n  \"function_name\": \"set_timer\",\n  \"arguments\": [\"5\"]\n}\n```"
+      },
+      {
+        "id": "factual_02",
+        "category": "factual_qa",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 519.81,
+        "answer": "Paris"
+      },
+      {
+        "id": "math_02",
+        "category": "math",
+        "exact_match": 1,
+        "json_valid": 0,
+        "instruction_compliant": 1,
+        "elapsed_ms": 1078.72,
+        "answer": "To calculate 15% of 200, we use the formula:\n\n\\[\n\\text{15% of 200} = 0.15 \\times 200 = 30\n\\]\n\nThus, the result is \\(\\boxed{30}\\)."
+      }
+    ],
+    "n": 10,
+    "exact_match": 8,
+    "json_valid": 4,
+    "instruction_compliant": 9,
+    "mean_elapsed_ms": 908.95
+  }
+}
